@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form   class=""
+                action="#"
+                method="get"
+                autocomplete="on"
+                enctype="multipart/form-data"
+                name="some_name"><!--Для передачи данных-->
+            <fieldset><!--Рамочка-->
+                    <legend>Какое-то название</legend>
+                    <label for="textbox">Поле с текстбоксом</label><!--for привязывает labyl к textbo...Второй способ разместить прямо в label-->
+                    <input id="textbox" type="text" name="" value="">
+            </fieldset>
+            <fieldset><!--Рамочка-->
+                    <legend>Ввод почты</legend>
+                    <input type="email"
+                    name="mail"
+                    placeholder="Введите электронную почту"
+                    value="">
+            </fieldset>
+            <fieldset>
+                    <legend>Ввод пароль</legend>
+                    <input  type="password"
+                            name="pass"
+                            placeholder="Введите пароль"
+                            value="">
+            </fieldset>
+            <fieldset>
+                    <legend>Сайт</legend>
+                    <input  type="url"
+                            name="sait"
+                            placeholder="Введите пароль"
+                            value="https://">
+            </fieldset>
+            <fieldset>
+                    <legend>Поиск</legend>
+                    <input  type="search"
+                            recuired
+                            minlenght="5">
+
+            </fieldset>
+            <fieldset>
+                    <legend>Загрузка файлов</legend>
+                    <input  type="file"
+                    multiple
+                    accept="image/*"><!--Несколько файлов-->
+
+            </fieldset>
+            <fieldset>
+                    <legend>Работа с числами</legend>
+                    <input  type="number" step="2" max="10"><!--Несколько файлов-->
+                    <br>
+                    <input  type="range"><!--Ползунок-->
+            </fieldset>
+            <fieldset>
+                    <legend>checkbox</legend>
+                    <label for="">
+                        <input  type="checkbox" checked>
+                        Вариант1</label>
+                        <br>
+                        <label for="">
+                        <input  type="radio">
+                        Вариант2</label>
+
+            </fieldset>
+            <fieldset>
+                    <legend>Группа чекбоксов</legend>
+                    <label for="">
+                    <input name="answer[]" type="checkbox" checked>
+                        Вариант1</label>
+                    <label for="">
+                    <input name="answer[]" type="checkbox" checked>
+                        Вариантц</label>
+                    <label for="">
+                    <input name="answer[]" type="checkbox" checked>
+                        Вариант3</label>
+                    <label for="">
+                    <input  type="checkbox" checked>
+                    Вариант4</label>
+            </fieldset>
+            <fieldset>
+                    <legend>Группа чекбоксов</legend>
+                    <label for="">
+                    <input name="answer[]" type="radio" checked>
+                        Вариант1</label>
+                    <label for="">
+                    <input name="answer[]" type="radio" checked>
+                        Вариантц</label>
+                    <label for="">
+                    <input name="answer[]" type="radio" checked>
+                        Вариант3</label>
+                    <label for="">
+                    <input  type="radio" checked>
+                    Вариант4</label>
+            </fieldset>
+            <fieldset>
+                    <legend>Работа с date/time</legend>
+                    <input  type="time">
+                    <br>
+                    <input  type="date">
+                    <br>
+                    <input  type="datetime-local">
+                    <br>
+                    <input  type="month">
+                    <br>
+                    <input  type="week">
+            </fieldset>
+            <fieldset>
+                    <legend>Выбор сайта</legend>
+                    <input  type="color">
+                    <input  type="hidden"><!--Скрытое поле-->
+            </fieldset>
+
+
+            <fieldset>
+                    <legend>Кнопки</legend>
+                    <input type="submit" value="Отправить"><!--Обязательно должен находиться внутри формы-->
+                    <input type="reset" value="Сброс"> <!--Приводит к очистке всей формы-->
+                    <input type="button" value="Свое действие"> <!--Для своих событий-->
+                    <input type="image" src="image1.jpg" value="Свое действие" alt="Ошибка"> <!--Для своих событий-->
+            </fieldset>
+            <fieldset>
+                    <legend>Еще одна кнопка</legend>
+                    <button type="submit" name="button"></button><!--Обязательно должен находиться внутри формы-->
+
+            </fieldset>
+            <fieldset>
+                    <legend>Текстовое поле</legend>
+                    <textarea name="name" rows="8" cols="80"></textarea><!--cols сколько строчек влезает-->
+            </fieldset>
+            <fieldset>
+                    <legend>Список</legend>
+                    <select class="" name="" size="2">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option selected value="">3</option>
+                        <option disabled value="">4</option>
+                        </select>
+            </fieldset>
+            <fieldset>
+                    <legend>Список</legend>
+                    <select multiple>
+                        <optgroup label="Список">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+        </form>
+    </body>
+</html>
